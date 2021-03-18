@@ -111,7 +111,7 @@ def _merge_components(cmd, meshcode, dummy):
     cmd["tn"].get(meshcode, dummy) / 10,
     cmd["pr"].get(meshcode, dummy),
     cmd["sr"].get(meshcode, dummy) / 10,
-    cmd["sd"].get(meshcode, dummy),
+    cmd["sd"].get(meshcode, dummy) / 10,
   ])
   return merged.transpose()
 
